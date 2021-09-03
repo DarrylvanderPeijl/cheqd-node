@@ -85,7 +85,9 @@ import (
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 )
 
-const Name = "cheqdnode"
+const Name = "cheqd-node"
+const Version = "1.0"
+const AppVersion = 1
 
 // this line is used by starport scaffolding # stargate/wasm/app/enabledProposals
 
