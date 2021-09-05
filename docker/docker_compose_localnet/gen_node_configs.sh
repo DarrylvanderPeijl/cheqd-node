@@ -48,6 +48,11 @@ do
     cheqd-noded add-genesis-account "operator$i" 10000000cheq,100000000stake --home $OPERATORS_HOME
 done
 
+echo "##### [Test] Add test vesting accounts"
+
+cheqd-noded keys add  vesting-acc --home $OPERATORS_HOME
+cheqd-noded add-genesis-account vesting-acc 5000000cheq --home $OPERATORS_HOME --vesting-amount 5000000cheq --vesting-start-time 1630352459 --vesting-end-time 1630362459
+
 
 echo "##### [Validator operators] Generate stake transactions" 
 
